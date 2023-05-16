@@ -1,0 +1,14 @@
+body {
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding: 25px;
+    background-color: aliceblue;
+  }
+  .verificador-row {
+    height: 100vh;
+  }
+  .verificador-container,
+  .form-control {
+    border: 1px solid black;
+  }
+  
