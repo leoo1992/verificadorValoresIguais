@@ -2,13 +2,100 @@ body {
     overflow-y: visible;
     overflow-x: hidden;
     padding: 25px;
-    background-color: aliceblue;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+   
+  *{
+    font-size: medium;
   }
   .verificador-row {
     height: 100vh;
   }
   .verificador-container,
   .form-control {
+    border-radius: 15px;
     border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+    color: white;
+    box-shadow: 3px 3px black;
+    text-align: center;
+  }
+  .form-control{
+    background-color: rgba(255, 255, 255, 0.541);
   }
   
+  .btn{
+    border-radius: 15px;
+    font-weight: 800;
+    box-shadow: 3px 3px black;
+  }
+  .btn-primary{
+    background-color: lime;
+    color: black;
+    border: black solid;
+  }
+  .btn-primary:hover {
+    background-color: darkgreen;
+    border: lime solid ;
+  }
+  
+  .btn-close, .btn-warning, .btn-danger{
+    background-color: red;
+    box-shadow: 3px 3px black;
+    border-radius: 15px;
+    border: 3px black solid;
+    color: black;
+  }
+  
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    border-radius: 15px;
+  }
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(170, 233, 139) 50%, rgba(77, 184, 226, 0.171) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+   
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
